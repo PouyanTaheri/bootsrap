@@ -51,7 +51,7 @@ header{
 
 
 .sidebar{
-  height: 110vh;
+  height: 115vh;
   background-color: #363740;
 }
 
@@ -84,7 +84,20 @@ header{
   font-size: .75rem;
 }
 
+.featuerCont {
+  width: 102% !important;
+  justify-content: center;
+}
 
+.featuerCont .col {
+  display: flex;
+  justify-content: center;
+}
+
+
+.GraphSection{
+    width: 96% !important;
+}
 
 .navbar-brand {
   padding-top: .75rem;
@@ -103,6 +116,7 @@ header{
   margin-bottom: 0px;
   padding: 0;
 }
+
 
 /* 4 Box Top / Right Side *General CSS*/
 #featureboxs{
@@ -127,6 +141,7 @@ header{
   letter-spacing: 0.4px;
 }
 
+
 /* 4 Box Top / Right Side *Numbers CSS*/
 #featuerNum{
   color: #252733;
@@ -138,6 +153,8 @@ header{
   line-height: normal;
   letter-spacing: 1px;
 }
+
+
 
 
 /* Graph Section Right Side */
@@ -153,8 +170,16 @@ header{
 #graphimg{
   width: 686px;
   height: 380px;
-  background-image: url(/assets/img/fullgraph.png);
+  /* background-image: url(/assets/img/fullgraph.png); */
   background-size: contain;
+  /* padding: 10px; */
+}
+
+#imgtwo{
+  width: 686px;
+  height: 380px;
+  padding: 15px;
+
 }
 
 /* Graph Section Title */
@@ -188,6 +213,21 @@ header{
   border-left: 1px solid #DFE0EB;
 }
 
+.ThirdSec{
+padding-bottom: 40px;
+}
+
+.USTickets{
+  height: 150px;
+  background-color: #FFF;
+  margin-bottom: 20px;
+}
+
+.Tasks{
+  height: 150px;
+  background-color: #FFF;
+  margin-bottom: 20px;
+}
 
 /* Mobile Version <----------------  */
 @media (max-width: 768px) {
@@ -214,6 +254,24 @@ header{
   .navbar-search {
     display: block;
   }
+
+
+
+  .featuerCont {
+    width:105% !important;
+    justify-content: center;
+  }
+
+  .featuerCont .col {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .GraphSection{
+    width: 96% !important;
+  }
+
 
   #featureboxs{
     width: 90%;
@@ -248,7 +306,7 @@ header{
   #graphimg{
     width: 90%;
     height: 380px;
-    background-image: url(/assets/img/fullgraph.png);
+    /* background-image: url(/assets/img/fullgraph.png); */
     background-repeat: no-repeat;
     background-size: contain;
   }
