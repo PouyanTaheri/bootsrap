@@ -1,56 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Noto+Sans+Symbols+2&family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,900;1,400&display=swap');
 
+
 main{
   background-color: #F7F8FC;
 }
 
+/* header for desktop (hidden) */
 header{
   height: 0px;
   background-color: #363740;
 }
 
 
-
+/* Logo at sidebar */
 .titletop{
   margin-top: 28px;
   margin-bottom: -60px;
   font-family: Mulish;
-font-size: 19px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.4px;
-color: #A4A6B3;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  color: #A4A6B3;
 }
 
+/* Logo for mobile */
 .titletopMob{
   display: none;
   margin-top: 0px;
 }
 
 
+/* Overview Title top of the page Right Side */
 #overviewTitle{
   color:#252733;
-
-/* Bold 24 (0.3 px) */
-font-family: Mulish;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.3px;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.3px;
 }
 
 .bi {
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    
-  }
-  
-  /*
-   * Sidebar
-   */
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
 
 .sidebar{
   height: 110vh;
@@ -61,60 +59,43 @@ letter-spacing: 0.3px;
   margin-top: 100px;
 }
 
-.GraphSection{
-text-align: center;
-border-radius: 8px;
-border: 1px solid var(--grayscale-divider, #DFE0EB);
-background: var(--grayscale-white, #FFF);
-margin-bottom: 20px;
+
+
+
+.sidebar .nav-link {
+  color: #A4A6B3;
+  padding: 15px;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2px;
 }
 
-#graphimg{
-  width: 686px;
-  height: 380px;
-  background-image: url(/assets/img/fullgraph.png);
-  background-size: contain;
+
+.sidebar .nav-link.active {
+  color: #DDE2FF;
+  background-color: rgba(158, 161, 179, 0.12);
+  border-left: 3px solid #DDE2FF ;
 }
-  
-  .sidebar .nav-link {
-    color: #A4A6B3;
-    padding: 15px;
-    font-family: Mulish;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.2px;
-  }
+
+.sidebar-heading {
+  font-size: .75rem;
+}
 
 
-  .sidebar .nav-link.active {
-    color: #DDE2FF;
-    background-color: rgba(158, 161, 179, 0.12);
-    border-left: 3px solid #DDE2FF ;
 
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
 
-  }
-  
-  .sidebar-heading {
-    font-size: .75rem;
-    
-  }
-  
-  /*
-   * Navbar
-   */
-  
-  .navbar-brand {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
-  }
-  
-  .navbar .form-control {
-    padding: .75rem 1rem;
-  }
-  
+.navbar .form-control {
+  padding: .75rem 1rem;
+}
+
 .OverviewHeader{
   width: 100%;
   height: 30px;
@@ -123,27 +104,30 @@ letter-spacing: 0.2px;
   padding: 0;
 }
 
+/* 4 Box Top / Right Side *General CSS*/
 #featureboxs{
   width: 258px;
   height: 134px;
   flex-shrink: 0;
   border-radius: 8px;
-border: 1px solid var(--grayscale-divider, #DFE0EB);
-background: #FFF;
-padding: 20px;
-text-align: center;
+  border: 1px solid var(--grayscale-divider, #DFE0EB);
+  background: #FFF;
+  padding: 20px;
+  text-align: center;
 }
 
+/* 4 Box Top / Right Side *Title CSS*/
 #featuerTitle{
   color: #9FA2B4;
   font-family: Mulish;
-font-size: 19px;
-font-style: normal;
+  font-size: 19px;
+  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.4px;
 }
 
+/* 4 Box Top / Right Side *Numbers CSS*/
 #featuerNum{
   color: #252733;
   text-align: center;
@@ -156,102 +140,117 @@ font-style: normal;
 }
 
 
-#graphTitle{
-  color: var(--grayscale-gray, #9FA2B4);
+/* Graph Section Right Side */
+.GraphSection{
   text-align: center;
-  
-  /* Semibold 16 (0.3 px) */
+  border-radius: 8px;
+  border: 1px solid var(--grayscale-divider, #DFE0EB);
+  background: var(--grayscale-white, #FFF);
+  margin-bottom: 20px;
+}
+
+/* Graph image css */
+#graphimg{
+  width: 686px;
+  height: 380px;
+  background-image: url(/assets/img/fullgraph.png);
+  background-size: contain;
+}
+
+/* Graph Section Title */
+#graphTitle{
+  color:#9FA2B4;
+  text-align: center;
   font-family: Mulish;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 22px; /* 137.5% */
+  line-height: 22px;
   letter-spacing: 0.3px;
   margin-top: 20px;
 }
 
+/* Graph info numbers CSS */
+#graphNum{
+  color: #252733;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.3px;
+}
 
+
+/* Border to left side */
 .detailGraph{
   border-left: 1px solid #DFE0EB;
 }
-#graphNum{
-  color: var(--grayscale-black, #252733);
-text-align: center;
 
-/* Bold 24 (0.3 px) */
-font-family: Mulish;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.3px;
-}
 
-  @media (max-width: 768px) {
+/* Mobile Version <----------------  */
+@media (max-width: 768px) {
 
-    header{
-      height: 70px;
-      background-color: #363740;
-    }
+  header{
+    height: 70px;
+    background-color: #363740;
+  }
 
-    .titletopMob{
-      display: block;
-      margin-top: 0px;
-    }
+  .titletopMob{
+    display: block;
+    margin-top: 0px;
+  }
 
-    .sidebar .offcanvas-lg {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 48px;
-    }
+  .sidebar .offcanvas-lg {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+  }
 
-    .sidebar{
-      height: 0vh;
-    }
-    .navbar-search {
-      display: block;
-    }
+  .sidebar{
+    height: 0vh;
+  }
+  .navbar-search {
+    display: block;
+  }
 
-    #featureboxs{
-      width: 90%;
-      height: 134px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-          border: 1px solid var(--grayscale-divider, #DFE0EB);
+  #featureboxs{
+    width: 90%;
+    height: 134px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--grayscale-divider, #DFE0EB);
     background: var(--grayscale-white, #FFF);
     padding: 20px;
     text-align: center;
     margin: 0 auto;
-    }
-    #featuerTitle{
-      width: 90%;
-      height: 134px;
-      display: flex;
-      align-items: center;
-      justify-content: center;    
-    }
-
-    #featuerNum{
-      width: 90%;
-      height: 134px;
-      display: flex;
-      align-items: center;
-      justify-content: center;    
-    }
-
-    #graphimg{
-      width: 90%;
-      height: 380px;
-      background-image: url(/assets/img/fullgraph.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  
   }
 
-
-  .header{
-    display: none;
+  #featuerTitle{
+    width: 90%;
+    height: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
   }
+
+  #featuerNum{
+    width: 90%;
+    height: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+  }
+
+  #graphimg{
+    width: 90%;
+    height: 380px;
+    background-image: url(/assets/img/fullgraph.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+}
