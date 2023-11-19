@@ -51,7 +51,7 @@ header{
 
 
 .sidebar{
-  height: 130vh;
+  height: 140vh;
   background-color: #363740;
 }
 
@@ -222,6 +222,14 @@ letter-spacing: 0.2px;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.1px;
+}
+
+.td-style{
+  padding: 20px 20px 20px 32px !important;
+}
+
+.td-style2{
+  padding: 0px 10px 20px 32px !important;
 }
 
 #GroupBold{
