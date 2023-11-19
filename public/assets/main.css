@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Noto+Sans+Symbols+2&family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,900;1,400&display=swap');
 
 
-main{
+main {
   background-color: #F7F8FC;
 }
 
 /* header for desktop (hidden) */
-header{
+header {
   height: 0px;
   background-color: #363740;
 }
 
 
 /* Logo at sidebar */
-.titletop{
+.titletop {
   margin-top: 28px;
   margin-bottom: -60px;
   font-family: Mulish;
@@ -26,15 +26,15 @@ header{
 }
 
 /* Logo for mobile */
-.titletopMob{
+.titletopMob {
   display: none;
   margin-top: 0px;
 }
 
 
 /* Overview Title top of the page Right Side */
-#overviewTitle{
-  color:#252733;
+#overviewTitle {
+  color: #252733;
   font-family: Mulish;
   font-size: 24px;
   font-style: normal;
@@ -50,12 +50,13 @@ header{
 }
 
 
-.sidebar{
+.sidebar {
   height: 140vh;
   background-color: #363740;
+  position: fixed;
 }
 
-.nav1{
+.nav1 {
   margin-top: 100px;
 }
 
@@ -64,7 +65,7 @@ header{
 
 .sidebar .nav-link {
   color: #A4A6B3;
-  padding: 15px;
+  padding: 20px 40px;
   font-family: Mulish;
   font-size: 16px;
   font-style: normal;
@@ -73,11 +74,15 @@ header{
   letter-spacing: 0.2px;
 }
 
+.sidebar-divider {
+  margin-block: 18px;
+}
+
 
 .sidebar .nav-link.active {
   color: #DDE2FF;
   background-color: rgba(158, 161, 179, 0.12);
-  border-left: 3px solid #DDE2FF ;
+  border-left: 3px solid #DDE2FF;
 }
 
 .sidebar-heading {
@@ -95,8 +100,8 @@ header{
 }
 
 
-.GraphSection{
-    width: 96% !important;
+.GraphSection {
+  width: 96% !important;
 }
 
 .navbar-brand {
@@ -109,7 +114,7 @@ header{
   padding: .75rem 1rem;
 }
 
-.OverviewHeader{
+.OverviewHeader {
   width: 100%;
   height: 30px;
   margin-top: 40px;
@@ -119,7 +124,7 @@ header{
 
 
 /* 4 Box Top / Right Side *General CSS*/
-#featureboxs{
+#featureboxs {
   width: 258px;
   height: 134px;
   flex-shrink: 0;
@@ -131,7 +136,7 @@ header{
 }
 
 /* 4 Box Top / Right Side *Title CSS*/
-#featuerTitle{
+#featuerTitle {
   color: #9FA2B4;
   font-family: Mulish;
   font-size: 19px;
@@ -143,7 +148,7 @@ header{
 
 
 /* 4 Box Top / Right Side *Numbers CSS*/
-#featuerNum{
+#featuerNum {
   color: #252733;
   text-align: center;
   font-family: Mulish;
@@ -158,7 +163,7 @@ header{
 
 
 /* Graph Section Right Side */
-.GraphSection{
+.GraphSection {
   text-align: center;
   border-radius: 8px;
   border: 1px solid var(--grayscale-divider, #DFE0EB);
@@ -167,7 +172,7 @@ header{
 }
 
 /* Graph image css */
-#graphimg{
+#graphimg {
   width: 686px;
   height: 380px;
   /* background-image: url(/assets/img/fullgraph.png); */
@@ -175,46 +180,47 @@ header{
   /* padding: 10px; */
 }
 
-#imgtwo{
+#imgtwo {
   width: 686px;
   height: 380px;
   padding: 15px;
 
 }
 
-.cardsection{
+.cardsection {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.listSection{
-padding: 0px 25px 0px 35px !important;
+.listSection {
+  padding: 0px 25px 0px 35px !important;
 }
 
-#TicketsTitle{
+#TicketsTitle {
   text-align: left;
   color: var(--grayscale-black, #252733);
-font-family: Mulish;
-font-size: 19px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.4px;
+  font-family: Mulish;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
 }
 
-#TicketsDetails{
+#TicketsDetails {
   color: var(--accent-default, #3751FF);
-text-align: right;
-/* Semibold 14 (0.2 px) */
-font-family: Mulish;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: 20px; /* 142.857% */
-letter-spacing: 0.2px;
+  text-align: right;
+  /* Semibold 14 (0.2 px) */
+  font-family: Mulish;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  /* 142.857% */
+  letter-spacing: 0.2px;
 }
 
-#TicketsGroup{
+#TicketsGroup {
   color: var(--grayscale-gray-dark, #4B506D);
   font-family: Mulish;
   font-size: 12px;
@@ -224,15 +230,15 @@ letter-spacing: 0.2px;
   letter-spacing: 0.1px;
 }
 
-.td-style{
+.td-style {
   padding: 20px 20px 20px 32px !important;
 }
 
-.td-style2{
+.td-style2 {
   padding: 0px 10px 20px 32px !important;
 }
 
-#GroupBold{
+#GroupBold {
   color: var(--grayscale-gray, #9FA2B4);
 
   /* Reg 12 (0.1 px) */
@@ -240,11 +246,12 @@ letter-spacing: 0.2px;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px; /* 133.333% */
+  line-height: 16px;
+  /* 133.333% */
   letter-spacing: 0.1px;
 }
 
-#graphTitleLeft{
+#graphTitleLeft {
   padding: 20px 0px 0px 20px;
   text-align: left;
   color: var(--grayscale-black, #252733);
@@ -256,7 +263,7 @@ letter-spacing: 0.2px;
   letter-spacing: 0.4px;
 }
 
-#graphSubTitleLeft{
+#graphSubTitleLeft {
   padding: 0px 0px 10px 20px;
   text-align: left;
   color: var(--grayscale-gray, #9FA2B4);
@@ -264,14 +271,15 @@ letter-spacing: 0.2px;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px; /* 133.333% */
+  line-height: 16px;
+  /* 133.333% */
   letter-spacing: 0.1px;
 }
 
 
 /* Graph Section Title */
-#graphTitle{
-  color:#9FA2B4;
+#graphTitle {
+  color: #9FA2B4;
   text-align: center;
   font-family: Mulish;
   font-size: 16px;
@@ -283,7 +291,7 @@ letter-spacing: 0.2px;
 }
 
 /* Graph info numbers CSS */
-#graphNum{
+#graphNum {
   color: #252733;
   text-align: center;
   font-family: Mulish;
@@ -296,31 +304,31 @@ letter-spacing: 0.2px;
 
 
 /* Border to left side */
-.detailGraph{
+.detailGraph {
   border-left: 1px solid #DFE0EB;
 }
 
-.ThirdSec{
+.ThirdSec {
   border-radius: 8px;
   border: 1px solid #DFE0EB;
   background: #FFF;
 }
 
 
-.USTickets{
+.USTickets {
   height: 150px;
   background-color: #FFF;
   margin-bottom: 20px;
 }
 
-.Tasks{
+.Tasks {
   padding: 5px;
   border-radius: 8px;
   border: 1px solid #DFE0EB;
   background-color: #FFF;
 }
 
-.badge{
+.badge {
   width: 74px;
   height: 30px;
   color: var(--grayscale-white, #FFF);
@@ -336,12 +344,12 @@ letter-spacing: 0.2px;
 /* Mobile Version <----------------  */
 @media (max-width: 768px) {
 
-  header{
+  header {
     height: 70px;
     background-color: #363740;
   }
 
-  .titletopMob{
+  .titletopMob {
     display: block;
     margin-top: 0px;
   }
@@ -352,9 +360,10 @@ letter-spacing: 0.2px;
     top: 48px;
   }
 
-  .sidebar{
+  .sidebar {
     height: 0vh;
   }
+
   .navbar-search {
     display: block;
   }
@@ -362,7 +371,7 @@ letter-spacing: 0.2px;
 
 
   .featuerCont {
-    width:105% !important;
+    width: 105% !important;
     justify-content: center;
   }
 
@@ -372,12 +381,12 @@ letter-spacing: 0.2px;
   }
 
 
-  .GraphSection{
+  .GraphSection {
     width: 96% !important;
   }
 
 
-  #featureboxs{
+  #featureboxs {
     width: 90%;
     height: 134px;
     border-radius: 8px;
@@ -391,28 +400,48 @@ letter-spacing: 0.2px;
     margin: 0 auto;
   }
 
-  #featuerTitle{
+  #featuerTitle {
     width: 90%;
     height: 134px;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
   }
 
-  #featuerNum{
+  #featuerNum {
     width: 90%;
     height: 134px;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
   }
 
-  #graphimg{
+  #graphimg {
     width: 90%;
     height: 380px;
     /* background-image: url(/assets/img/fullgraph.png); */
     background-repeat: no-repeat;
     background-size: contain;
   }
+}
 
+.userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.header-divider {
+  margin-inline: 12px;
+}
+
+.profile-avatar {
+  width: 48px;
+  height: 48px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #9FA2B4;
+  padding: 2px;
 }
