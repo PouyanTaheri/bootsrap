@@ -182,6 +182,14 @@ header{
 
 }
 
+.cardsection{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.listSection{
+padding-left: 25px !important;
+}
+
 /* Graph Section Title */
 #graphTitle{
   color:#9FA2B4;
