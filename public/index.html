@@ -313,18 +313,44 @@
                </div>
                <div class="col-md-6">
                   <div class="list-group Tasks">
-                     <label class="list-group-item d-flex gap-2">
-                     <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios1" value="" checked>
-                     <span>Finish ticket update</span>
-                     </label>
-                     <label class="list-group-item d-flex gap-2">
-                     <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios2" value="">
-                     <span>Create new ticket example</span>
-                     </label>
-                     <label class="list-group-item d-flex gap-2">
-                     <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios3" value="">
-                     <span>Update ticket report</span>
-                     </label>
+                    <table class="table">
+                      <thead>
+                    <tr>
+                      <td colspan="2">Create new task</td>
+                      <th scope="row"></th>
+                      <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <rect width="24" height="24" rx="8" fill="#F0F1F7"/>
+                          <path d="M12 7V17" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round"/>
+                          <path d="M17 12L7 12" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"> 
+                        <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios3" value="">
+                        Finish ticket update
+                    </td>
+                    <th scope="row"></th>
+                    <td>Urgent</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"> 
+                        <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios3" value="">
+                        Create new ticket example
+                    </td>
+                    <th scope="row"></th>
+                    <td>New</td>
+                    <tr>
+                      <td colspan="2"> 
+                          <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios3" value="">
+                          Update ticket report
+                      </td>
+                      <th scope="row"></th>
+                      <td>Default</td>
+                    </tr>
+                  </tbody>
+                </table>
                   </div>
                </div>
             </div>
