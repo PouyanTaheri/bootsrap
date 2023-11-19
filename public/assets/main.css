@@ -124,7 +124,7 @@ header {
 
 
 /* 4 Box Top / Right Side *General CSS*/
-#featureboxs {
+.featureboxes {
   width: 258px;
   height: 134px;
   flex-shrink: 0;
@@ -135,8 +135,21 @@ header {
   text-align: center;
 }
 
+.featureboxes:hover {
+  border: 1px solid #3851ff;
+  box-shadow: #3851ff 0px 1px 5px 0px;
+}
+
+.featureboxes:hover .featureTitle {
+  color: #3841ff;
+}
+
+.featureboxes:hover .featureNum {
+  color: #3841ff;
+}
+
 /* 4 Box Top / Right Side *Title CSS*/
-#featuerTitle {
+.featureTitle {
   color: #9FA2B4;
   font-family: Mulish;
   font-size: 19px;
@@ -146,9 +159,8 @@ header {
   letter-spacing: 0.4px;
 }
 
-
 /* 4 Box Top / Right Side *Numbers CSS*/
-#featuerNum {
+.featureNum {
   color: #252733;
   text-align: center;
   font-family: Mulish;
@@ -386,7 +398,7 @@ header {
   }
 
 
-  #featureboxs {
+  .featureboxes {
     width: 90%;
     height: 134px;
     border-radius: 8px;
@@ -400,7 +412,7 @@ header {
     margin: 0 auto;
   }
 
-  #featuerTitle {
+  .featureTitle {
     width: 90%;
     height: 134px;
     display: flex;
@@ -408,7 +420,7 @@ header {
     justify-content: center;
   }
 
-  #featuerNum {
+  .featureNum {
     width: 90%;
     height: 134px;
     display: flex;
