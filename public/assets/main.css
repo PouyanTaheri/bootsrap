@@ -429,11 +429,25 @@ header {
   }
 
   #graphimg {
-    width: 90%;
+    width: 100%;
     height: 380px;
     /* background-image: url(/assets/img/fullgraph.png); */
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  #imgtwo {
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .info-bar {
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
+  .FeatureCT {
+    margin-top: 20px;
   }
 }
 
@@ -456,4 +470,8 @@ header {
   border-radius: 50%;
   border: 1px solid #9FA2B4;
   padding: 2px;
+}
+
+.info-bar {
+  display: flex;
 }
