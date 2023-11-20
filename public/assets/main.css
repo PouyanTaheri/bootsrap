@@ -89,12 +89,12 @@ header {
   font-size: .75rem;
 }
 
-.featuerCont {
+.featureCont {
   width: 102% !important;
   justify-content: center;
 }
 
-.featuerCont .col {
+.featureCont .col {
   display: flex;
   justify-content: center;
 }
@@ -290,7 +290,7 @@ header {
 
 
 /* Graph Section Title */
-#graphTitle {
+.graphTitle {
   color: #9FA2B4;
   text-align: center;
   font-family: Mulish;
@@ -303,7 +303,7 @@ header {
 }
 
 /* Graph info numbers CSS */
-#graphNum {
+.graphNum {
   color: #252733;
   text-align: center;
   font-family: Mulish;
@@ -382,12 +382,12 @@ header {
 
 
 
-  .featuerCont {
+  .featureCont {
     width: 105% !important;
     justify-content: center;
   }
 
-  .featuerCont .col {
+  .featureCont .col {
     display: flex;
     justify-content: center;
   }
