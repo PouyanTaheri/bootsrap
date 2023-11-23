@@ -50,8 +50,9 @@ header {
 }
 
 
+
 .sidebar {
-  height: 140vh;
+  height: 100%;
   background-color: #363740;
   position: fixed;
 }
@@ -99,10 +100,6 @@ header {
   justify-content: center;
 }
 
-
-.GraphSection {
-  width: 96% !important;
-}
 
 .navbar-brand {
   padding-top: .75rem;
@@ -176,11 +173,13 @@ header {
 
 /* Graph Section Right Side */
 .GraphSection {
+  width: 96% !important;
   text-align: center;
   border-radius: 8px;
   border: 1px solid var(--grayscale-divider, #DFE0EB);
   background: var(--grayscale-white, #FFF);
   margin-bottom: 20px;
+  margin-top: -25px;
 }
 
 /* Graph image css */
@@ -192,9 +191,9 @@ header {
   /* padding: 10px; */
 }
 
-#imgtwo {
-  width: 686px;
-  height: 380px;
+#MyGraph {
+  width: 700px;
+  height: auto;
   padding: 15px;
 
 }
@@ -312,6 +311,7 @@ header {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.3px;
+  padding-bottom: 10px;
 }
 
 
@@ -351,6 +351,27 @@ header {
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+}
+
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.header-divider {
+  margin-inline: 12px;
+}
+
+.profile-avatar {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #9FA2B4;
+  padding: 2px;
 }
 
 /* Mobile Version <----------------  */
@@ -436,42 +457,72 @@ header {
     background-size: contain;
   }
 
-  #imgtwo {
-    max-width: 100%;
-    object-fit: contain;
+  
+
+  .userInfo {
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -60px !important;
+    gap: 12px; /* Adjust the gap as needed */
   }
 
-  .info-bar {
-    flex-direction: column-reverse;
-    margin: 0;
+  .header-divider {
+    margin-inline: 6px; /* Adjust the margin as needed */
   }
 
-  .FeatureCT {
-    margin-top: 20px;
+  .profile-avatar {
+    width: 36px; /* Adjust the width as needed */
+    height: 36px; /* Adjust the height as needed */
   }
+
+  #graphimg {
+    width: 200px;
+    height: auto;
+    /* background-image: url(/assets/img/fullgraph.png); */
+    background-size: contain;
+    /* padding: 10px; */
+  }
+
+
+  #MyGraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: auto;
+  }
+  
+
+  .ThirdSec{
+    width: 500px !important;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0px auto 30px auto ;
+  }
+
+
+  .sidebar .nav-link {
+    color: #404040;
+    padding: 20px 40px;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+  }  
+  
+  .sidebar .nav-link.active {
+    color: #272727;
+    background-color: rgba(158, 161, 179, 0.12);
+    border-left: 3px solid #DDE2FF;
+  }
+
 }
 
-.userInfo {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 24px;
-}
 
-.header-divider {
-  margin-inline: 12px;
-}
-
-.profile-avatar {
-  width: 48px;
-  height: 48px;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 1px solid #9FA2B4;
-  padding: 2px;
-}
-
-.info-bar {
-  display: flex;
-}
